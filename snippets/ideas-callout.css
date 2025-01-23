@@ -1,0 +1,5 @@
+.callout[data-callout="ideas"] {
+  --callout-color: 80, 250, 123;
+  --callout-icon: lightbulb;
+}
+
