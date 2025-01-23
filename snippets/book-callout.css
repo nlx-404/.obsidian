@@ -1,0 +1,4 @@
+.callout[data-callout="books"] {
+  --callout-color: 189, 147, 249;
+  --callout-icon: library-big;
+}
