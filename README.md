@@ -19,6 +19,8 @@ I use snippets heavily and a lot are needed to achieve the looks of my setup. Th
 
 ![Obsidian Homepage](assets/github-obsidian.jpg)
 
+To make the page wider to fit more content in I applied the cssclass `wide` to it. This uses the `wide.css` snippet.
+
 To achieve the look of the columns side by side I use the `MCL Multi Column` snippet. Then in the note I write:
 ```
 > [!multi-column]
