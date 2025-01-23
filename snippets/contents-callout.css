@@ -1,0 +1,4 @@
+.callout[data-callout="table-of-contents"] {
+    --callout-color: 123, 131, 151;
+    --callout-icon: table-of-contents;
+}
