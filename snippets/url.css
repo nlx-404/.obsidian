@@ -1,0 +1,6 @@
+/*Changes how urls appear*/
+a[href^="https://"] {
+    background-color: #454759;
+    border-radius: 4px;
+    padding-left: 6px;
+}
