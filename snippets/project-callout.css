@@ -1,0 +1,4 @@
+.callout[data-callout="projects"] {
+  --callout-color: 139, 233, 253;
+  --callout-icon: folder-open;
+}
