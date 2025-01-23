@@ -1,0 +1,4 @@
+/*This fixes the banner plugin not taking up the left side of the screen*/
+.obsidian-banner .banner-image.draggable {
+    margin: 0 !important;
+}
