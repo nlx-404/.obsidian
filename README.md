@@ -10,6 +10,7 @@ The plugins I use are:
 - **Dataview** (To create a table of my modified files in the past 7 days)
 - **Iconize** (To give folders and files icons)
 - **Kanban** (To create and view my overall tasks)
+- **Homepage** (To set a custom note as a homepage)
 
 # Snippets
 I use snippets heavily and a lot are needed to achieve the looks of my setup. They can be found in the `snippets` folder and they include descriptions of what they do.
