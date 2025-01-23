@@ -1,0 +1,4 @@
+/* When a cssclass is added to a note using "wide" it makes it wider. I use this for my homepage */
+.wide {
+    --file-line-width: 63.5rem;
+}
