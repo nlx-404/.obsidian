@@ -1,5 +1,8 @@
 # 📝 Obsidian Setup 
 
+# Theme
+The theme I am using can be found in the `theme` folder. It is originally the dracula theme but modified a lot by me.
+
 # Plugins
 The plugins I use are:
 - **Banners** (Display a banner at the top of the page)
@@ -8,4 +11,4 @@ The plugins I use are:
 - **Iconize** (To give folders and files icons)
 - **Kanban** (To create and view my overall tasks)
 
-# Hi
+# 
