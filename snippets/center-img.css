@@ -1,0 +1,6 @@
+/*This centers an image if you put |center inside of an image*/
+img[alt*="center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
