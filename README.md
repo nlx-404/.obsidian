@@ -13,3 +13,47 @@ The plugins I use are:
 
 # Snippets
 I use snippets heavily and a lot are needed to achieve the looks of my setup. They can be found in the `snippets` folder and they include descriptions of what they do.
+
+# Homepage
+To achieve the look of the columns side by side I use the `MCL Multi Column` snippet. Then in the note I write:
+```
+> [!multi-column]
+>
+>> [!Ideas]
+>>  *Explore your mind*
+>> - [[Insert link here]]
+>
+>> [!Books]
+>> *Review your books*
+>> - [[Insert link here]]
+>> 
+>
+>> [!Projects]
+>> *See your projects* 
+>> - [[Insert link here]]
+>>
+>
+>> [!todo]+
+>> *See your tasks*
+>> - [[Insert link here]]
+```
+
+**Note:** If this isn't working check the MCL Multi Column docs and tweak it to make it work.
+
+<hr>
+
+To achieve the look of the table that shows the modified files in the past 7 days, I use the **Dataview** plugin and the `table.css` snippet. In my files I have a property called reviewed, and I give it either two values true or false. The snippet changes the color of the table cell block depending on the value of the notes property. I then write: 
+
+```
+> [!Weekly Review]
+> *Review your notes modified in the last 7 days*
+> ```dataview
+> TABLE  durationformat(date(now) - file.mtime, "d'd'") + " ago" AS "Modified" , file.folder AS "Path", choice(reviewed = "true", "<span class='cellTrue'>true</span>", "<span class='cellFalse'>false</span>") AS "Reviewed"
+> WHERE file.mtime >= (date(today) - dur(7 days))
+> AND !contains(file.name, "Template")
+> AND !contains(file.name, "Homepage")
+> AND !contains(file.name, "Kanban")
+> AND !contains(file.tags, "#toc")
+> SORT file.mtime ASC
+> ```
+```
