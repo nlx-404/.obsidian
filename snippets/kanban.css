@@ -1,0 +1,15 @@
+/*This fixes how images appear in the kanban board*/
+.kanban-plugin__item img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.kanban-plugin__date>span, .cm-kanban-time-wrapper>span, .cm-kanban-date-wrapper>span, .kanban-plugin__date>a, .cm-kanban-time-wrapper>a, .cm-kanban-date-wrapper>a {
+    font-weight: 700;
+}
+
+/*For mobile view*/
+.kanban-plugin {
+    height: 111%;
+}
