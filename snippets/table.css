@@ -1,0 +1,9 @@
+.markdown-rendered .dataview td:has(.cellTrue) {
+  background-color: #50fa7b;
+  color: black;
+}
+
+.markdown-rendered .dataview td:has(.cellFalse) {
+  background-color: #FF5555;
+  color: black;
+}
