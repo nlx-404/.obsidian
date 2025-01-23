@@ -1,0 +1,11 @@
+#calendar-container .today {
+    font-weight: 700;
+    border: solid 1.5px #bd93f9;
+    border-radius: 2px;
+    /*background-color:  #bd93f9;*/
+    /*color: #FFFFFF;*/
+}
+
+#calendar-container {
+    font-size: 15px;
+}
