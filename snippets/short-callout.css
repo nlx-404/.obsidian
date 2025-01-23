@@ -1,0 +1,96 @@
+/* @settings
+
+author: https://github.com/ltroj/obsidian-short-callout
+
+name: Short callout (snippet)
+id: shortco-style
+settings:
+    - 
+        id: shortco-padding
+        title: Callout padding
+        description: "Breathing space between callout border and title/content (in rem units)."
+		type: variable-number-slider
+		default: 0.2
+		format: rem
+		min: 0
+		max: 2
+		step: 0.05
+	- 
+		id: shortco-margin-top
+		title: Callout top margin
+		description: "Additional space between callout and previous paragraph (in rem units). Note: the minimal margin is theme-dependent (`--p-spacing`)."
+		type: variable-number-slider
+		default: 0
+		format: rem
+		min: 0
+		max: 5
+		step: 0.1
+	- 
+		id: shortco-content-margin-left
+		title: Callout content left margin
+		description: "Space between callout title and content (in rem units)."
+		type: variable-number-slider
+		default: 0.5
+		format: rem
+		min: 0
+		max: 5
+		step: 0.05
+    - 
+        id: shortco-border-color
+        title: Callout border color
+		description: "Default is `--background-modifier-border`."
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#'
+*/
+
+body {
+	--shortco-padding: 0.2rem;
+	--shortco-content-margin-left: 0.5rem;
+	--shortco-margin-top: 0.4rem;
+}
+
+
+/* Parent container of callouts ending with ":" */
+/* div.cm-callout:has(.callout[data-callout$=":"]) { */
+/* } */
+
+/* The following selectors target all callouts ending with ":" (e.g. > [!book-copy:]) */
+
+
+
+.callout[data-callout$=":"] {
+	padding: var(--shortco-padding);
+	display: inline-flex;
+	align-items: center;
+	margin-top: var(--shortco-margin-top);
+    border-radius: 6px !important;
+}
+
+.callout[data-callout$=":"] > div.callout-title {
+	float: left;
+	margin: 0 0 0 var(--shortco-padding);
+	padding: 0;
+}
+
+.callout[data-callout$=":"] > div.callout-content {
+	margin-right: var(--shortco-padding);
+	margin-left: var(--shortco-padding);
+	padding: 0;
+}
+
+.callout[data-callout$=":"] > div.callout-content > p {
+	margin: 0 0 0 var(--shortco-content-margin-left);
+}
+
+.callout[data-callout="thoughts:"] {
+  --callout-color: 241, 250, 140;
+  --callout-icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>;
+}
+
+.callout[data-callout="reference:"] {
+  --callout-color: 242, 242, 242;
+  --callout-icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-line"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>;
+  font-style: italic;
+}
