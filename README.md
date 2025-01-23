@@ -15,6 +15,9 @@ The plugins I use are:
 I use snippets heavily and a lot are needed to achieve the looks of my setup. They can be found in the `snippets` folder and they include descriptions of what they do.
 
 # Homepage
+
+![Obsidian Homepage](assets/github-obsidian.jpg)
+
 To achieve the look of the columns side by side I use the `MCL Multi Column` snippet. Then in the note I write:
 ```
 > [!multi-column]
