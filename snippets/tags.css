@@ -1,0 +1,5 @@
+/*Changes how tags look in the property box*/
+.metadata-property[data-property-key="tags"] .multi-select-pill{
+  background-color: #373449;
+  color: #8BE9FD;
+}
