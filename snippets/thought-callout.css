@@ -1,0 +1,5 @@
+.callout[data-callout="thought"] {
+  --callout-color: 255, 223, 0;
+  --callout-icon: message-circle-question;
+}
+
