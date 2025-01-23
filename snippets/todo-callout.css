@@ -1,0 +1,4 @@
+.callout[data-callout="todo"] {
+  --callout-color: 244, 163, 0;
+  --callout-icon: lucide-alert-circle;
+}
