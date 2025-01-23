@@ -1,0 +1,4 @@
+/*This hides the properties box in reading mode. I use this because theres a bug with the banner plugin, that displays the properties box over the image*/
+body {
+    --metadata-display-reading: none;
+}
