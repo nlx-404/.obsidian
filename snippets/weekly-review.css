@@ -1,0 +1,4 @@
+.callout[data-callout="weekly-review"] {
+    --callout-color: 255, 250, 1;
+    --callout-icon: file-check;
+}
