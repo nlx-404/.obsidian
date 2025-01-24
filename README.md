@@ -19,9 +19,9 @@ I use snippets heavily and a lot are needed to achieve the looks of my setup. Th
 
 ![Obsidian Homepage](assets/github-obsidian.jpg)
 
-To make the page wider to fit more content in I applied the cssclass `wide` to it in the note properties. This uses the `wide.css` snippet.
+- To make the page wider to fit more content in I applied the cssclass `wide` to it in the note properties. This uses the `wide.css` snippet.
 
-To achieve the look of the columns side by side I use the `MCL Multi Column` snippet. Then in the note I write:
+- To achieve the look of the columns side by side I use the `MCL Multi Column` snippet. Then in the note I write:
 ```
 > [!multi-column]
 >
@@ -48,7 +48,8 @@ To achieve the look of the columns side by side I use the `MCL Multi Column` sni
 
 <hr>
 
-To achieve the look of the table that shows the modified files in the past 7 days, I use the **Dataview** plugin and the `table.css` snippet. In my files I have a property called reviewed, and I give it either two values true or false. If I modify a file I also change the reviewed property to false. The snippet changes the color of the table cell block depending on the value of the notes property. I then write: 
+- To achieve the look of the table that shows the modified files in the past 7 days, I use the **Dataview** plugin and the `table.css` snippet. 
+-     In my files I have a property called reviewed, and I give it either two values true or false. If I modify a file I also change the reviewed property to false. At the end of the week after reviewing the note I change the property to true. The snippet changes the color of the table cell block depending on the value of the notes property. I then write: 
 
 ```
 > [!Weekly Review]
