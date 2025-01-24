@@ -48,7 +48,7 @@ To achieve the look of the columns side by side I use the `MCL Multi Column` sni
 
 <hr>
 
-To achieve the look of the table that shows the modified files in the past 7 days, I use the **Dataview** plugin and the `table.css` snippet. In my files I have a property called reviewed, and I give it either two values true or false. The snippet changes the color of the table cell block depending on the value of the notes property. I then write: 
+To achieve the look of the table that shows the modified files in the past 7 days, I use the **Dataview** plugin and the `table.css` snippet. In my files I have a property called reviewed, and I give it either two values true or false. If I modify a file I also change the reviewed property to false. The snippet changes the color of the table cell block depending on the value of the notes property. I then write: 
 
 ```
 > [!Weekly Review]
