@@ -1000,3 +1000,9 @@ svg.svg-icon.lucide-chevron-down {
 .workspace-drawer-active-tab-header {
     background-color: #313441;
 }
+
+/*Change color of background when you click on a footnote and it brings you down to the references*/
+.is-flashing {
+  background-color: #44475A !important;
+}
+
